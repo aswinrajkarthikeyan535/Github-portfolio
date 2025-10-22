@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aswin Raj Gowri Karthikeyan - Web Developer, Business Analytics Professional, and Student Leader. Explore my portfolio showcasing projects in full-stack development, ERP systems, and digital innovation.">
+    <meta property="og:title" content="Aswin Raj Gowri Karthikeyan - Portfolio">
+    <meta property="og:description" content="Web Developer & Business Analytics Professional specializing in full-stack development and digital innovation">
+    <meta property="og:type" content="website">
+    <title>Aswin Raj Gowri Karthikeyan - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <button class="nav-logo" onclick="scrollToSection('hero')">Aswin Raj</button>
+            
+            <div class="nav-links" id="navLinks">
+                <button class="nav-link" onclick="scrollToSection('about')">About</button>
+                <button class="nav-link" onclick="scrollToSection('experience')">Experience</button>
+                <button class="nav-link" onclick="scrollToSection('projects')">Projects</button>
+                <button class="nav-link" onclick="scrollToSection('skills')">Skills</button>
+                <button class="nav-link" onclick="scrollToSection('education')">Education</button>
+                <button class="nav-link" onclick="scrollToSection('achievements')">Achievements</button>
+            </div>
+
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" onclick="toggleMobileMenu()">
+                <span class="menu-icon" id="menuIcon">☰</span>
+            </button>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <button class="nav-link" onclick="scrollToSection('about')">About</button>
+            <button class="nav-link" onclick="scrollToSection('experience')">Experience</button>
+            <button class="nav-link" onclick="scrollToSection('projects')">Projects</button>
+            <button class="nav-link" onclick="scrollToSection('skills')">Skills</button>
+            <button class="nav-link" onclick="scrollToSection('education')">Education</button>
+            <button class="nav-link" onclick="scrollToSection('achievements')">Achievements</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Aswin Raj Gowri Karthikeyan</h1>
+            <p class="hero-subtitle">Web Developer | Business Analytics Professional | Student Leader</p>
+            <p class="hero-bio">
+                Passionate about transforming ideas into reality through innovative web solutions and data-driven strategies. 
+                Currently pursuing B.Tech in Information Technology with expertise in full-stack development and business intelligence.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('projects')">View Projects</button>
+                <button class="btn btn-outline">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Download CV
+                </button>
+            </div>
+            <div class="hero-social">
+                <button class="btn btn-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </button>
+                <button class="btn btn-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            
+            <div class="about-content">
+                <div class="profile-image-container">
+                    <img src="images/profile.png" alt="Aswin Raj Gowri Karthikeyan" class="profile-image">
+                </div>
+                
+                <div class="about-text">
+                    <h3 class="about-vision-title">Driving Future Success Through Digital Transformation</h3>
+                    <p class="about-vision">
+                        I believe in the transformative power of technology to reshape our world. My mission is to drive digital 
+                        transformation initiatives that create meaningful impact, bridging the gap between innovative solutions and 
+                        real-world challenges. Through strategic implementation of cutting-edge technologies, I aim to contribute to 
+                        a digitally empowered global community.
+                    </p>
+                    
+                    <div class="badges">
+                        <span class="badge">🎓 Intended to Pursue Masters in Information Systems</span>
+                        <span class="badge">📝 IELTS: Overall Band 6.5</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-bio">
+                <p>
+                    I'm a dedicated technology enthusiast currently pursuing my Bachelor of Technology in Information Technology 
+                    at Sri Shanmugha College of Engineering and Technology. With a strong academic record (CGPA: 8.45), I've built 
+                    a diverse skill set spanning web development, business analytics, and digital marketing.
+                </p>
+                <p>
+                    My professional journey includes impactful roles at AAKAM360 as an Ambassador, where I mentor students and drive 
+                    engagement; IN22LABS as a Team Lead managing internship opportunities; and FintechGie as a Web Developer creating 
+                    cutting-edge digital solutions. These experiences have equipped me with expertise in full-stack development, 
+                    project management, CRM tools, and data analytics.
+                </p>
+                <p>
+                    I'm passionate about leveraging technology to solve real-world problems, as demonstrated by my flagship project 
+                    Pay Dart—an ERP system revolutionizing admission and fee management for educational institutions. Beyond coding, 
+                    I'm committed to continuous learning, currently expanding my skills in project management and German language (A1 level).
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Ambassador</h3>
+                            <span class="badge badge-secondary">Current</span>
+                        </div>
+                        <p class="company">AAKAM360</p>
+                        <p class="period">Nov 2023 - Present</p>
+                        <p class="location">Sankari, Tamil Nadu</p>
+                        <ul class="description-list">
+                            <li>Mentor students and help them navigate their career paths, providing guidance and support</li>
+                            <li>Support AAKAM360's growth by fostering strong connections with students and industries</li>
+                            <li>Represent the organization at events and showcase innovative solutions</li>
+                            <li>Drive engagement and spread awareness about educational technology initiatives</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Team Lead</h3>
+                            <span class="badge badge-secondary">EduTech</span>
+                        </div>
+                        <p class="company">IN22LABS</p>
+                        <p class="period">May 2024 - Jul 2024</p>
+                        <p class="location">Chennai, Tamil Nadu</p>
+                        <ul class="description-list">
+                            <li>Led dynamic platform connecting students with leading corporates for internship opportunities</li>
+                            <li>Made cold calls to potential clients and managed diverse teams</li>
+                            <li>Conducted in-depth market research and competitive analysis</li>
+                            <li>Represented Internme.app by branding stalls at tech summits</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Pre-Sales Junior Manager</h3>
+                            <span class="badge badge-secondary">EduTech</span>
+                        </div>
+                        <p class="company">IN22LABS</p>
+                        <p class="period">Dec 2023 - May 2024</p>
+                        <p class="location">Chennai, Tamil Nadu</p>
+                        <ul class="description-list">
+                            <li>Contributed to Data Analytics Product Division success, specializing in pre-sales management</li>
+                            <li>Leveraged analytical skills to support business strategies and provide insights</li>
+                            <li>Expertise in Sales, CRM, Sales Pipeline Development, and Business Intelligence</li>
+                            <li>Managed Digital Marketing and Corporate Communications initiatives</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Student Internship</h3>
+                            <span class="badge badge-secondary">Education Industry</span>
+                        </div>
+                        <p class="company">AAKAM360</p>
+                        <p class="period">Jun 2023 - Dec 2023</p>
+                        <p class="location">Sankari, Tamil Nadu</p>
+                        <ul class="description-list">
+                            <li>Drove change and innovation by transforming ideas into reality</li>
+                            <li>Designed and developed custom websites tailored to company branding and goals</li>
+                            <li>Served as creative force behind video editing and poster design</li>
+                            <li>Received training in Project Management and Business Analytics with live capstones</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Web Developer</h3>
+                            <span class="badge badge-secondary">Business + Digital + Technology</span>
+                        </div>
+                        <p class="company">FintechGie</p>
+                        <p class="period">Jun 2022 - Jun 2023</p>
+                        <p class="location">Tiruchengode, India</p>
+                        <ul class="description-list">
+                            <li>Developed innovative web designs and operations for clients and products</li>
+                            <li>Created and maintained cutting-edge designs and user interfaces</li>
+                            <li>Worked on flagship products and services during tenure</li>
+                            <li>Delivered comprehensive digital solutions for business clients</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/paydart.png" alt="Pay Dart Project">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Pay Dart - Digitalized Admission and Fees Management System</h3>
+                    <p class="project-period">Oct 2024 - Jun 2025</p>
+                    <p class="project-description">
+                        A scalable and secure ERP solution tailored for educational institutions to digitize and automate their 
+                        entire fee and admission lifecycle. Addresses key operational inefficiencies such as manual errors, delayed 
+                        fee collections, poor visibility in financial reporting, and lack of real-time data.
+                    </p>
+                    
+                    <h4>Key Features:</h4>
+                    <ul class="description-list">
+                        <li>Role-Based Access: Ensures data security and smooth workflow among students, finance teams, CAO, and administrators</li>
+                        <li>Real-Time Analytics Dashboard: Empowers decision-makers with predictive insights on payment trends, defaults, and financial forecasting</li>
+                        <li>Automated Fee Collection: Streamlines payment processing and reduces manual intervention</li>
+                        <li>Comprehensive Reporting: Generates detailed financial reports for institutional transparency</li>
+                    </ul>
+
+                    <h4>Technologies:</h4>
+                    <div class="badges">
+                        <span class="badge badge-secondary">Full-Stack Development</span>
+                        <span class="badge badge-secondary">ERP Systems</span>
+                        <span class="badge badge-secondary">Database Management</span>
+                        <span class="badge badge-secondary">Analytics Dashboard</span>
+                        <span class="badge badge-secondary">Payment Integration</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/Kiruthickraj004/fms-backend" target="_blank" class="btn btn-outline btn-small">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            Backend Repo
+                        </a>
+                        <a href="https://github.com/Akshayan21/PayDart.git" target="_blank" class="btn btn-outline btn-small">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            Frontend Repo
+                        </a>
+                        <a href="https://github.com/Kiruthickraj004/fms-webapplication" target="_blank" class="btn btn-outline btn-small">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            Web App Repo
+                        </a>
+                        <a href="https://drive.google.com/drive/folders/1AVzHCbbpKBLqrEqYQUdveu6LiK8nEoE6" target="_blank" class="btn btn-outline btn-small">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                            Documentation
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            
+            <div class="skills-grid">
+                <div class="card">
+                    <h3>Web Development</h3>
+                    <div class="badges">
+                        <span class="badge badge-secondary">Full Stack Development</span>
+                        <span class="badge badge-secondary">React.js</span>
+                        <span class="badge badge-secondary">Node.js</span>
+                        <span class="badge badge-secondary">HTML/CSS</span>
+                        <span class="badge badge-secondary">JavaScript</span>
+                        <span class="badge badge-secondary">UI/UX Design</span>
+                        <span class="badge badge-secondary">Responsive Design</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Programming Languages</h3>
+                    <div class="badges">
+                        <span class="badge badge-secondary">Java</span>
+                        <span class="badge badge-secondary">Python</span>
+                        <span class="badge badge-secondary">JavaScript</span>
+                        <span class="badge badge-secondary">TypeScript</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Business & Analytics</h3>
+                    <div class="badges">
+                        <span class="badge badge-secondary">Business Intelligence</span>
+                        <span class="badge badge-secondary">Data Analytics</span>
+                        <span class="badge badge-secondary">Tableau</span>
+                        <span class="badge badge-secondary">Sales Pipeline Development</span>
+                        <span class="badge badge-secondary">Market Research</span>
+                        <span class="badge badge-secondary">Digital Marketing</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Tools & Platforms</h3>
+                    <div class="badges">
+                        <span class="badge badge-secondary">Zoho CRM</span>
+                        <span class="badge badge-secondary">Odoo CRM</span>
+                        <span class="badge badge-secondary">Microsoft Office</span>
+                        <span class="badge badge-secondary">Canva</span>
+                        <span class="badge badge-secondary">Git/GitHub</span>
+                        <span class="badge badge-secondary">Project Management</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Soft Skills</h3>
+                    <div class="badges">
+                        <span class="badge badge-secondary">Leadership</span>
+                        <span class="badge badge-secondary">Team Management</span>
+                        <span class="badge badge-secondary">Mentoring</span>
+                        <span class="badge badge-secondary">Communication</span>
+                        <span class="badge badge-secondary">Event Management</span>
+                        <span class="badge badge-secondary">Corporate Communications</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Languages</h3>
+                    <div class="badges">
+                        <span class="badge badge-secondary">Tamil (Native)</span>
+                        <span class="badge badge-secondary">English (Proficient - C1)</span>
+                        <span class="badge badge-secondary">German (Learning - A1)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title">Education & Certifications</h2>
+            
+            <div class="education-section">
+                <h3 class="subsection-title">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                        <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                    </svg>
+                    Academic Background
+                </h3>
+                
+                <div class="education-grid">
+                    <div class="card">
+                        <h4>Bachelor of Technology in Information Technology</h4>
+                        <p class="company">Sri Shanmugha College of Engineering and Technology</p>
+                        <p class="period">Jun 2021 - Jun 2025 • Sankari, Salem, India</p>
+                        <span class="badge badge-secondary">CGPA: 8.45</span>
+                    </div>
+
+                    <div class="card">
+                        <h4>Higher Secondary Course</h4>
+                        <p class="company">SKV Higher Secondary School</p>
+                        <p class="period">Jun 2019 - May 2021 • Paramathi Velur, India</p>
+                    </div>
+
+                    <div class="card">
+                        <h4>Matriculation School Leaving Certificate</h4>
+                        <p class="company">Nalandas Higher Secondary</p>
+                        <p class="period">Jun 2018 - Apr 2019 • Tiruchengode, India</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="education-section">
+                <h3 class="subsection-title">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="8" r="7"></circle>
+                        <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                    </svg>
+                    Certifications & Courses
+                </h3>
+                
+                <div class="certifications-grid">
+                    <div class="card card-small">
+                        <h4>Foundations of Digital Marketing</h4>
+                        <p class="period">Google Digital Garage</p>
+                    </div>
+
+                    <div class="card card-small">
+                        <h4>Full Stack Web Development</h4>
+                        <p class="period">Udemy</p>
+                    </div>
+
+                    <div class="card card-small">
+                        <h4>Tableau Training</h4>
+                        <p class="period">Simplilearn</p>
+                    </div>
+
+                    <div class="card card-small">
+                        <h4>Java Programming</h4>
+                        <p class="period">Udemy</p>
+                    </div>
+
+                    <div class="card card-small">
+                        <h4>Core Python for Everyone</h4>
+                        <p class="period">Udemy</p>
+                    </div>
+
+                    <div class="card card-small">
+                        <h4>Project Management</h4>
+                        <p class="period">Coursera</p>
+                        <span class="badge badge-outline">Ongoing</span>
+                    </div>
+
+                    <div class="card card-small">
+                        <h4>German A1 Course</h4>
+                        <p class="period">Goethe-Zentrum Coimbatore</p>
+                        <span class="badge badge-outline">Ongoing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Achievements & Recognition</h2>
+            
+            <div class="achievements-grid">
+                <div class="card">
+                    <div class="achievement-header">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                        <div>
+                            <span class="badge badge-secondary">Conference</span>
+                            <span class="achievement-date">May 28, 2025</span>
+                        </div>
+                    </div>
+                    <h4>International Conference on Adaptive Technologies for Sustainable Growth (ICATS'25)</h4>
+                    <p class="company">Paavai Engineering College, Namakkal</p>
+                    <p class="achievement-description">
+                        Presenting bachelor's final year project 'Pay Dart – Digitalized Admission and Fees Management System' 
+                        at the 10th edition of this international conference in hybrid mode.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="achievement-header">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="8" r="7"></circle>
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                        </svg>
+                        <div>
+                            <span class="badge badge-secondary">Award</span>
+                            <span class="achievement-date">Oct 14, 2024</span>
+                        </div>
+                    </div>
+                    <h4>Resource Person - Web Development</h4>
+                    <p class="company">Vaagai Tamil Sangam</p>
+                    <p class="achievement-description">
+                        Recognized for delivering impactful sessions in the International Online Faculty Development Programme 
+                        'Valaithalam', endorsed by the Curriculum, Evaluation, and Education Advisory Committee.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="achievement-header">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="8" r="7"></circle>
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                        </svg>
+                        <div>
+                            <span class="badge badge-secondary">Award</span>
+                            <span class="achievement-date">Aug 7, 2023</span>
+                        </div>
+                    </div>
+                    <h4>Inspire'23 - Student Coordinator & Senior Mentor</h4>
+                    <p class="company">Sri Shanmugha Educational Institutions</p>
+                    <p class="achievement-description">
+                        Served as Student Coordinator and Senior Mentor focusing on developing future-ready student leaders 
+                        through peer mentoring, soft skills enhancement, and leadership exposure.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="achievement-header">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="8" r="7"></circle>
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                        </svg>
+                        <div>
+                            <span class="badge badge-secondary">Award</span>
+                            <span class="achievement-date">Feb 28, 2022</span>
+                        </div>
+                    </div>
+                    <h4>Best Innovation Award - Science Expo</h4>
+                    <p class="company">Sri Shanmugha Education Institutions</p>
+                    <p class="achievement-description">
+                        Awarded for Best Innovation at Science Expo for developing a Web Model for Event Management, 
+                        demonstrating early commitment to digital solutions.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="achievement-header">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                        <div>
+                            <span class="badge badge-secondary">Membership</span>
+                            <span class="achievement-date">2023 - 2027</span>
+                        </div>
+                    </div>
+                    <h4>Indian Society for Technical Education (ISTE) - Student Member</h4>
+                    <p class="company">ISTE</p>
+                    <p class="achievement-description">
+                        Student Member (Membership No: 00157 - Institution Code: TN397) of this national-level professional 
+                        organization dedicated to the advancement of technical education in India.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="achievement-header">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                        <div>
+                            <span class="badge badge-secondary">Membership</span>
+                            <span class="achievement-date">Jun 2021 - Jun 2025</span>
+                        </div>
+                    </div>
+                    <h4>Central Grievances Redressal Committee - Active Member</h4>
+                    <p class="company">Sri Shanmugha College of Engineering and Technology</p>
+                    <p class="achievement-description">
+                        Actively involved in addressing grievances related to academics, facilities, and student welfare while 
+                        promoting constructive dialogue between students and administration.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h3 class="footer-name">Aswin Raj Gowri Karthikeyan</h3>
+                    <p class="footer-tagline">Web Developer | Business Analytics Professional | Student Leader</p>
+                </div>
+
+                <div>
+                    <h4>Quick Links</h4>
+                    <div class="footer-links">
+                        <button onclick="scrollToSection('about')">About</button>
+                        <button onclick="scrollToSection('experience')">Experience</button>
+                        <button onclick="scrollToSection('projects')">Projects</button>
+                        <button onclick="scrollToSection('skills')">Skills</button>
+                        <button onclick="scrollToSection('education')">Education</button>
+                        <button onclick="scrollToSection('achievements')">Achievements</button>
+                    </div>
+                </div>
+
+                <div>
+                    <h4>Connect</h4>
+                    <div class="footer-social">
+                        <button class="btn btn-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </button>
+                        <button class="btn btn-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Aswin Raj Gowri Karthikeyan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
