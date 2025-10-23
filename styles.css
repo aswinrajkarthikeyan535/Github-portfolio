@@ -139,7 +139,7 @@ nav.scrolled {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('images/hero-background.png');
+    background-image: url('Portfolio/images/hero-background.png');
     background-size: cover;
     background-position: center;
     overflow: hidden;
